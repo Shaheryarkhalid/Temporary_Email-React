@@ -1,0 +1,65 @@
+.Popup{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Popup form{
+    width: 50vh;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #4e4e55;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+}
+.Popup form input{
+    padding: 10px 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.Popup form input:focus{
+    outline: 1px solid #aaa;
+}
+.Popup form input[type="submit"]{
+    background-color: #00c497;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    cursor:pointer;
+    border-radius: 20px;
+}
+.Popup form input[type="submit"]:hover{
+    box-shadow: 0 0 5px #000;
+}
+.Popup form .Close_Popup:hover > svg{
+    scale: 1.2;
+}
+.Popup form span{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.Popup form .Close_Popup{
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.Popup form .Close_Popup svg path{
+    fill: #f00;
+}
+.Disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}

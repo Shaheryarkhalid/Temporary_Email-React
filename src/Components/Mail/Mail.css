@@ -1,0 +1,132 @@
+.Mail{
+    height: 100%;
+    width: 100%;
+}
+.Mail .Mail_Header{
+    width: 100%;
+    height: 50px;
+    padding:0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #22242b;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    box-shadow: 0 0 20px #000;
+}
+
+.Mail .Mail_Header .Back{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Mail .Mail_Header button{
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Mail .Mail_Header svg{
+    height: 70px;
+}
+.Mail .Mail_Header .Back:hover>button,.Mail .Mail_Header .Back:hover>svg path{
+    color: #20c997;
+    stroke: #20c997;
+}
+.Mail .Mail_Details{
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+}
+.Mail .Mail_Details .Border_Bottom{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    background-color: #ddd;
+}
+.Mail .User_Details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Mail .User_Details .Logo{
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #20c997;
+}
+.Mail .User_Details .Mail_Name{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Mail .User_Details span{
+    font-family: 'Roboto', sans-serif;
+}
+.Mail .User_Details .Name{
+    font-size: 0.8rem;
+}
+.Mail .User_Details .Email{
+    margin-top: 3px;
+    font-size: 0.7rem;
+    color: #aaa; 
+}
+.Mail .Date_Section{
+    display: flex;
+    flex-direction: column;
+}
+.Mail .Date_Section span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+}
+.Mail .Date_Section .Date{
+    margin-top: 3px;
+    color: #888; 
+    font-size: 0.7rem;
+}
+.Mail .Subject-Sec{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+.Mail .Subject-Sec span{
+    font-family: 'Roboto', sans-serif;
+    color: #888; 
+    font-size: 0.75rem;
+}
+.Mail .Subject-Sec .Subject{
+    margin-left: 10px;
+    color: #000;
+}
+.Mail .Mail_Content{
+    height: calc(100% - 143px);
+    width: 100%;
+    text-wrap: wrap;
+    padding: 15px 20px;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    background-color: #fff;
+}
+@media screen and (max-width:480px) {
+    .Mail .Mail_Content{
+        font-size: 0.5rem;
+    }
+}

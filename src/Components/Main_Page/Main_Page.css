@@ -1,0 +1,138 @@
+.Main_Page{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    background-image: url(/src/assets/header-bg.jpg);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Main_Page .Upper_Section{
+    width: 480px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px dashed #666;
+    border-radius: 20px;
+}
+.Main_Page .Upper_Section .Title{
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.Main_Page .Upper_Section .Mail_Holder{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.Main_Page .Upper_Section .Mail_Holder .Email{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:15px 20px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px #000;
+}
+.Main_Page .Upper_Section .Mail_Holder .Copy_Button{
+    height: 45px;
+    width: 45px;
+    background-color: #00c497;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Main_Page .Upper_Section .Mail_Holder .Copy_Button:hover{
+    background-color: #555;
+}
+.Main_Page .Upper_Section .Mail_Holder .Copied{
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    display: none;
+}
+.Main_Page .Upper_Section .Actions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Main_Page .Upper_Section .Actions button{
+    padding:13px 25px;
+    background-color: #fff;
+    color: #777;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    align-items: center;
+}
+.Main_Page .Upper_Section .Actions button svg{
+    height: 20px;
+}
+.Main_Page .Upper_Section .Actions button:hover{
+    color: #000;
+}
+.Main_Page .Emails{
+    height: 600px;
+    width: 800px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 0 10px #000;
+}
+.Main_Page .Upper_Section .Actions button.Delete_Email{
+    opacity: 0.5;
+    cursor: none;
+}
+@media screen and (max-width:800px) {
+    .Main_Page .Emails{
+        width: 100%;
+    }
+    @media screen and (max-width:480px) {
+        .Main_Page{
+            padding: 0;
+        }
+        .Main_Page .Upper_Section{
+            width: 100%;
+            height: 500px;
+        }
+        .Main_Page .Upper_Section .Mail_Holder{
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        .Main_Page .Upper_Section .Mail_Holder .Email{
+            margin-bottom: 10px;
+        }
+        .Main_Page .Upper_Section .Actions{
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+        }
+        .Main_Page .Upper_Section .Actions button{
+            margin-bottom: 10px;
+        }
+        @media screen and (max-height:850px) {
+            .Main_Page{
+                min-height: 100vh;
+            }
+            .Main_Page .Upper_Section .Actions{
+                margin-top: 10px;
+            }
+            .Main_Page .Upper_Section{
+                height: 850px;
+            }
+        }
+    }
+}
